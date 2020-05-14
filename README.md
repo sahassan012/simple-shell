@@ -11,13 +11,13 @@ It then forks off a child process. The child then loads the requested program by
 Then, **wait()** is invoked to wait for the child complete executing and report why it ended and cits exit value if available. 
 
 ### Commands
-As the UNIX shell does, this program prompts the user and waits for input continously. 
+``$ command`` As the UNIX shell does, this program prompts the user and waits for input continously. 
 When every command finishes running, the parent process outputs the Process ID and Status: ``pid:%d status:%d``
 
-When piping is invoked, it redirects the output of the first command as input to the second command.
+``$ command1 | command2`` When piping is invoked, it redirects the output of the first command as input to the second command.
 Here, there are two instances of Process ID and Status displayed.
 
-Lastly, when a semi-colon is used, first the command before the semi-colon is executed before the second command after. 
+``$ command1 ; command21`` When a semi-colon is used, first the command before the semi-colon is executed before the second command after. 
 
 ### Signal handling
 Normally SIGINT and SIGSTP terminate a running program, however, in Simple-Shell, they are trapped and display a message.
