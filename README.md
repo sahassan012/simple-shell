@@ -12,7 +12,7 @@ Then, **wait()** is invoked to wait for the child complete executing and report 
 
 ### Commands
 As the UNIX shell does, this program prompts the user and waits for input continously. 
-When every command finishes running, the parent process outputs the Process ID and Status. 
+When every command finishes running, the parent process outputs the Process ID and Status: ``pid:%d status:%d``
 
 When piping is invoked, it redirects the output of the first command as input to the second command.
 Here, there are two instances of Process ID and Status displayed.
